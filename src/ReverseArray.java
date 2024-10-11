@@ -3,18 +3,10 @@ import java.util.Scanner;
 public class ReverseArray {
 
     public static void main(String[] args) {
-        int size = 0;
-        int[] arr;
         Scanner input = new Scanner(System.in);
-        /*
-        System.out.print("Enter a size of array = ");
-        size = input.nextInt();
-        while (size > 20) {
-            System.out.print("Enter a size of array = ");
-            size = input.nextInt();
-        }
-        */
+
         // Enter size < 20
+        int size;
         do {
             System.out.print("Enter a size: ");
             size = input.nextInt();
@@ -23,7 +15,7 @@ public class ReverseArray {
         } while (size > 20);
 
         // Enter elements' value
-        arr = new int[size];
+        int[] arr = new int[size];
         for (int i = 0; i < arr.length; i++){
             System.out.print("Enter " + (i+1) + " element: ");
             arr[i] = input.nextInt();
